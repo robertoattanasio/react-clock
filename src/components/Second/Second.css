@@ -1,0 +1,26 @@
+.second-container {
+	position: absolute;
+	inset: 0 0 0 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+.second-line {
+	width: 41%;
+	border: 1px solid rgb(255, 77, 77);
+	transform: rotate(-90deg) translateX(50%);
+}
+
+.second-line::after {
+	position: absolute;
+	content: "";
+	top: -8px;
+	right: -8px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: rgb(255, 77, 77);
+}
